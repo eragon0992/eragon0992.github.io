@@ -106,6 +106,7 @@ body{
 }
 
 .footer{
+	margin-top:10px;
 	padding: 25px 20% 0 10%;
     width: 70%;
 	border-top: solid 1px #C8C8C8;
