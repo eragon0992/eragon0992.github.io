@@ -22,6 +22,8 @@ body{
 }
 
 .right-side{
+	animation: city 5s linear;
+    -webkit-animation: city 5s linear;
 	width:30%;
 	height:100%;
 	float:right;
@@ -31,6 +33,14 @@ body{
 	overflow:hidden;
 	border-radius:0 5px 5px 0;
 }
+@keyframes city {
+    from { background-position: 0 50%;}
+    to { background-position: 40 50%; }
+   }
+   @-webkit-keyframes city {
+    from { background-position: 0 50%;}
+    to { background-position: 40 50%; }
+   }
 
 .left-container{
 	padding: 8% 15% 1% 10%;
