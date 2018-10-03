@@ -1,31 +1,49 @@
- body{
+body{
 	font-family: 'Dosis', sans-serif;
 	-background-color:#FFEBCD;
 	background-color:#1E90FF;
  }
- hr{
+hr{
 	background-color:white;
 	height:5px;
  }
+ 
+ header{
+	 margin-bottom:30px;
+ }
 
- .container{
-	 width:1024;
+.container{
+	min-width:1024px;
 	background-color:rgba(0,0,0, 0.5);
  }
 
- .navbar a{
+
+.nav-link, .navbar-brand{
+	padding-left:5px;
+	padding-right:5px;
+	margin-left:0;
+	margin-right:0;
 	text-decoration: none;
-	}
- .navbar a:hover{
+	font-weight:bold;
+}
+	
+.navbar a:hover{
 
 	background-color:rgba(127,127,127,0.5);
 	text-decoration: none;
-	}
-.display-1{
-	background-color:rgba(0,0,0, 0.5);
 }
+.display-1{
+	border-radius:100px 100px 100px 100px;
+	-background: radial-gradient(rgba(255,255,255,0.75), rgba(0,0,0,0.75));
+	background:radial-gradient(rgb(0,0,0) 100px, rgba(0,0,0,0) );
+	text-shadow: white 0 0 100px;
+
+	-webkit-text-stroke: 2px black;
+}
+
 .card-groop{
 	display:flex;
+	margin-bottom:30px;
 }
 .card{
 	display:flex;
@@ -39,4 +57,58 @@
 
 footer{
 		padding-bottom:10px;
+}
+.carousel-control{
+	width:80px;
+	height:80px;
+	margin-top:150px;
+	border-radius:40px 40px 40px 40px;
+	background-color:#000000;
+}
+.card-header{
+	position:relative;
+	font-size:150%;
+	font-weight:bold;
+	text-align:center;
+}
+.fas{
+	z-index: 900;
+	position:absolute;
+	top:-20px;
+	right:-10px;
+	font-size:200%;
+	-webkit-text-stroke: 1px black;
+	transform: rotate(200deg);
+}
+
+.sale{
+	z-index: 900;
+	position:absolute;
+	top:-2px;
+	right:-5px;
+	font-size:60%;
+	color:black;
+	font-weight:bold;
+	transform: rotate(290deg);
+}
+
+.sale:hover{
+	color:red;
+	
+}
+
+.carousel-control-prev{
+	margin-left:25px;
+}
+
+.carousel-control-next{
+	margin-right:25px;
+}
+
+.card-title{
+	text-align:center;
+	font-weight:bold;
+	color:#0f477f;
+	background-color:rgba(255,255,255,0.75);
+	padding:5px;
 }
