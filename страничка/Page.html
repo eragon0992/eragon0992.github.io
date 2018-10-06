@@ -3,6 +3,8 @@
 
 <head>
     <title>Bootstrap</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -12,63 +14,58 @@
 </head>
 
 <body>
-    <header>
-        <div class="row">
-            <div class="col">
-                <nav class="navbar navbar-dark bg-dark">
-                    <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
                         <i class="fas fa-chess-rook"></i>
                         Bootstrap
                     </a>
-                    <ul class="nav">
-                        <li class="nav-item">
-                            <a class="nav-link text-light active " href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="#">Enterprise</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle text-muted" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Feauture</a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <button type="button" class=" btn btn-outline-secondary ">Secondary</button>
-                        </li>
-                    </ul>
-                </nav>
+        <ul class="nav">
+            <li class="nav-item">
+                <a class="nav-link text-light active " href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-muted" href="#">Enterprise</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle text-muted" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Feauture</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <button type="button" class=" btn btn-outline-secondary ">Secondary</button>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fill bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-5">
+                    <h1 class="text-center">Album example</h1>
+                </div>
             </div>
-        </div>
-        <div class="container-fill bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col mt-5">
-                        <h1 class="text-center">Album example</h1>
-                    </div>
+            <div class="row">
+                <div class="col mb-3">
+                    <p>Lorem ipsum dolor sit amet, qui eius melius senserit an. Ne mei persius moderatius. Recteque interesset per ne. Ut esse oblique duo. Nostro placerat no ius. Nisl sonet eum cu, minimum scripserit instructior cu nam. Te veniam aliquando persequeris sit. Mel ea minim vocent luptatum.
+                    </p>
                 </div>
-                <div class="row">
-                    <div class="col mb-3">
-                        <p>Lorem ipsum dolor sit amet, qui eius melius senserit an. Ne mei persius moderatius. Recteque interesset per ne. Ut esse oblique duo. Nostro placerat no ius. Nisl sonet eum cu, minimum scripserit instructior cu nam. Te veniam aliquando persequeris sit. Mel ea minim vocent luptatum.
-                        </p>
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col text-center mb-5">
+                    <button type="button" class="btn btn-primary mb-2">Main call to action</button>
+                    <button type="button" class="btn btn-secondary mb-2">Secondary action</button>
                 </div>
-                <div class="row">
-                    <div class="col text-center mb-5">
-                        <button type="button" class="btn btn-primary mr-2">Main call to action</button>
-                        <button type="button" class="btn btn-secondary">Secondary action</button>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col mb-5">
-                    </div>
+            </div>
+            <div class="row">
+                <div class="col mb-5">
                 </div>
             </div>
         </div>
+    </div>
     </header>
     <div class="container">
         <div class="row">
@@ -76,8 +73,8 @@
                 <h3 class="text-center font-italic">From the fireouse</h3>
             </div>
         </div>
-        <div class="d-inline-block justify-content-center border-top ml-5 mr-5 text-center">
-            <div class="d-inline-block card mt-3" style="width: 18rem;">
+        <div class="card-group border-top ">
+            <div class="card mt-3" style="width: 18rem;">
                 <img class="card-img-top" src="https://imgplaceholder.com/420x220/222222" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title font-weight-light"><small>Card title</small><pre class="float-right font-weight-bold text-primary">200$</pre></h5>
@@ -85,7 +82,7 @@
                     <button type="button" class="btn btn-outline-dark btn-block">View more</button>
                 </div>
             </div>
-            <div class="d-inline-block card mt-3" style="width: 18rem;">
+            <div class="card mt-3" style="width: 18rem;">
                 <img class="card-img-top" src="https://imgplaceholder.com/420x220/222222" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title font-weight-light"><small>Card title</small><pre class="float-right font-weight-bold text-primary">200$</pre></h5>
@@ -93,7 +90,7 @@
                     <button type="button" class="btn btn-outline-dark btn-block">View more</button>
                 </div>
             </div>
-            <div class="d-inline-block card mt-3" style="width: 18rem;">
+            <div class="card mt-3" style="width: 18rem;">
                 <img class="card-img-top" src="https://imgplaceholder.com/420x220/222222" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title font-weight-light"><small>Card title</small><pre class="float-right font-weight-bold text-primary">200$</pre></h5>
@@ -102,8 +99,8 @@
                 </div>
             </div>
         </div>
-        <div class="row ml-5 mr-5 mt-5">
-            <div class="col-md-7">
+        <div class="row mt-5">
+            <div class="col-lg-7">
                 <h3 class="font-italic mb-3"><small>Last news</small></h3>
                 <hr>
                 <div class="alert alert-secondary mt-4" role="alert">
@@ -117,7 +114,7 @@
                     <p>Lorem ipsum dolor sit amet, qui eius melius senserit an. Ne mei persius moderatius. Recteque interesset per ne. Ut esse oblique duo. Nostro placerat no ius. </p>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-lg-4">
                 <div class="alert bg-dark text-light" role="alert">
                     <h3>About</h3>
                     <p class="bg-dark text-light">
@@ -126,11 +123,11 @@
                 </div><label><h3>Subscribe</h3></label>
                 <form>
                     <div class="form-row">
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-6">
                             <label for="inputEmail4">Firstname</label>
                             <input type="text" class="form-control" id="inputFirstname" placeholder="">
                         </div>
-                        <div class="form-group col-md-6">
+                        <div class="form-group col-6">
                             <label for="inputPassword4">Lastname <small>(Optional)</small></label>
                             <input type="text" class="form-control" id="inputLastname" placeholder="">
                         </div>
@@ -147,46 +144,44 @@
                 </form>
             </div>
         </div>
-        <footer class="bg-dark text-light">
-            <div class="row pt-4 pl-5  text-secondary">
-                <div class="col-3">
-                    <h1><i class="fas fa-chess-rook display-1 text-white"></i></h1>
-                    <small><i class="far fa-copyright"></i>2018-2019</small>
-                </div>
-                <div class="col-2">
-                    <h6 class="text-white">Feautures</h6>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                </div>
-                <div class="col-2">
-                    <h6 class="text-white">Feautures</h6>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                </div>
-                <div class="col-2">
-                    <h6 class="text-white">Feautures</h6>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                </div>
-                <div class="col-2">
-                    <h6 class="text-white">Feautures</h6>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                    <p class="mb-0">Text</p>
-                </div>
-                <div class="col-1">
-                </div>
-            </div>
-        </footer>
     </div>
+    <footer class="bg-dark text-light">
+        <div class="row pt-4 pl-5  text-secondary  mr-0 ml-0">
+            <div class="col-3">
+                <h1><i class="fas fa-chess-rook display-1 text-white"></i></h1>
+                <small><i class="far fa-copyright"></i>2018-2019</small>
+            </div>
+            <div class="col-sm-2">
+                <h6 class="text-white">Feautures</h6>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+            </div>
+            <div class="col-sm-2">
+                <h6 class="text-white">Feautures</h6>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+            </div>
+            <div class="col-md-2">
+                <h6 class="text-white">Feautures</h6>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+            </div>
+            <div class="col-md-2">
+                <h6 class="text-white">Feautures</h6>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+                <p class="mb-0">Text</p>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
