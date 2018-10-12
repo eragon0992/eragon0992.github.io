@@ -1,11 +1,4 @@
 header {
-    background-image: url("img/header.webp");
-
-    background: -moz-radial-gradient(center, ellipse cover, rgba(10, 119, 213, 1) 0%, rgba(10, 119, 213, 0.8) 20%, rgba(208, 228, 247, 0) 100%);
-    /* FF3.6-15 */
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(10, 119, 213, 1) 0%, rgba(10, 119, 213, 0.8) 20%, rgba(208, 228, 247, 0) 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: radial-gradient(ellipse at center, rgba(10, 119, 213, 1) 0%, rgba(10, 119, 213, 0.8) 20%, rgba(208, 228, 247, 0) 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    ;
+    background: radial-gradient(circle, rgba(0, 0, 255, 0.88) 10%, rgba(0, 0, 255, 0.1) 100%), url("img/header.webp");
+    background-position: center;
 }
