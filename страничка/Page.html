@@ -71,8 +71,8 @@
             </div>
         </div>
     </div>
-    </header>
-    <div class="container">
+
+	    <div class="container">
         <div class="row">
             <div class="col mt-4 mb-3">
                 <h3 class="text-center font-italic">From the fireouse</h3>
@@ -80,7 +80,7 @@
         </div>
         <div class="card-group border-top ">
             <div class="card mt-3 mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://imgplaceholder.com/420x220/222222" alt="Card image cap">
+                <img class="card-img-top" src="420x220.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title font-weight-light"><small>Card title</small><pre class="float-right font-weight-bold text-primary">200$</pre></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -88,7 +88,7 @@
                 </div>
             </div>
             <div class="card mt-3 mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://imgplaceholder.com/420x220/222222" alt="Card image cap">
+                <img class="card-img-top" src="420x220.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title font-weight-light"><small>Card title</small><pre class="float-right font-weight-bold text-primary">200$</pre></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -96,7 +96,7 @@
                 </div>
             </div>
             <div class="card mt-3 mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="https://imgplaceholder.com/420x220/222222" alt="Card image cap">
+                <img class="card-img-top" src="420x220.png" alt="Card image cap">
                 <div class="card-body">
                     <h5 class="card-title font-weight-light"><small>Card title</small><pre class="float-right font-weight-bold text-primary">200$</pre></h5>
                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -123,27 +123,29 @@
                 <div class="alert bg-dark text-light" role="alert">
                     <h3>About</h3>
                     <p class="bg-dark text-light">
-                        Lorem ipsum dolor sit amet, qui eius melius senserit an. Ne mei persius moderatius. Recteque interesset per ne. Ut esse oblique duo. Nostro placerat no ius.
+                        <ul id="list">
+							
+						</ul>
                     </p>
                 </div><label><h3>Subscribe</h3></label>
                 <form>
                     <div class="form-row">
                         <div class="form-group col-6">
-                            <label for="inputEmail4">Firstname</label>
+                            <label for="inputFirstname">Firstname</label>
                             <input type="text" class="form-control" id="inputFirstname" placeholder="">
                         </div>
                         <div class="form-group col-6">
-                            <label for="inputPassword4">Lastname <small>(Optional)</small></label>
+                            <label for="inputLastname">Lastname <small>(Optional)</small></label>
                             <input type="text" class="form-control" id="inputLastname" placeholder="">
                         </div>
                     </div>
                     <div class="input-group mb-3">
                         <div class="input-group-prepend">
-                            <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                            <span class="input-group-text" for="SubscribeEmail"><i class="fas fa-envelope"></i></span>
                         </div>
-                        <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                        <input type="text" class="form-control" id="SubscribeEmail" aria-label="Amount (to the nearest dollar)">
                         <div class="input-group-append">
-                            <button type="button" class="btn btn-dark">Subscribe</button>
+                            <button type="button" class="btn btn-dark" id="Subscribe">Subscribe</button>
                         </div>
                     </div>
                 </form>
@@ -187,6 +189,7 @@
             </div>
         </div>
     </footer>
-</body>
+	<script src="scripts.js"></script>
+	</body>
 
 </html>
