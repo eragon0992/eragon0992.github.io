@@ -186,7 +186,7 @@ function equals(digit1, math, digit2) {
             }
         case "/":
             {
-                if (digit2 != "0")
+                if (Number(digit2) != 0)
                     answer.value = String(Number(digit1) / Number(digit2));
                 else
                     answer.value = "Division by Zero!"
