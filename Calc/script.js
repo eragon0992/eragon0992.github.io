@@ -106,6 +106,8 @@ function addDigit(x) {
         case "+":
             {
                 if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
+                    if (tempDigit.indexOf("-") == 0)
+                        answer.value += ")";
                     math = "+";
                     answer.value += "+";
                     digit1 = tempDigit;
@@ -117,10 +119,12 @@ function addDigit(x) {
             {
                 if (tempDigit.length == 0) {
                     tempDigit += "-";
-                    answer.value += "-";
+                    answer.value += "(-";
                 } else
                 if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
-                    if (digit1.length == 0 || digit2.length == 0) {
+                    if ((digit1.length == 0 || digit2.length == 0) && tempDigit != "-") {
+                        if (tempDigit.indexOf("-") == 0)
+                            answer.value += ")";
                         math = "-";
                         answer.value += "-";
                         digit1 = tempDigit;
@@ -132,6 +136,8 @@ function addDigit(x) {
         case "*":
             {
                 if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
+                    if (tempDigit.indexOf("-") == 0)
+                        answer.value += ")";
                     math = "*";
                     answer.value += "*";
                     digit1 = tempDigit;
@@ -142,6 +148,8 @@ function addDigit(x) {
         case "÷":
             {
                 if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
+                    if (tempDigit.indexOf("-") == 0)
+                        answer.value += ")";
                     math = "/";
                     answer.value += "÷";
                     digit1 = tempDigit;
