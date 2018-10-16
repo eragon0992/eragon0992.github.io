@@ -105,7 +105,7 @@ function addDigit(x) {
 
         case "+":
             {
-                if (answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) {
+                if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
                     math = "+";
                     answer.value += "+";
                     digit1 = tempDigit;
@@ -115,17 +115,23 @@ function addDigit(x) {
             }
         case "-":
             {
-                if (answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) {
-                    math = "-";
+                if (tempDigit.length == 0) {
+                    tempDigit += "-";
                     answer.value += "-";
-                    digit1 = tempDigit;
-                    tempDigit = "";
+                } else
+                if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
+                    if (digit1.length == 0 || digit2.length == 0) {
+                        math = "-";
+                        answer.value += "-";
+                        digit1 = tempDigit;
+                        tempDigit = "";
+                    }
                 }
                 break;
             }
         case "*":
             {
-                if (answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) {
+                if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
                     math = "*";
                     answer.value += "*";
                     digit1 = tempDigit;
@@ -135,7 +141,7 @@ function addDigit(x) {
             }
         case "÷":
             {
-                if (answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) {
+                if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
                     math = "/";
                     answer.value += "÷";
                     digit1 = tempDigit;
