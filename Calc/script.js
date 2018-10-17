@@ -106,7 +106,7 @@ function addDigit(x) {
         case "+":
             {
                 if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
-                    if (tempDigit.indexOf("-") == 0&&tempDigit.length>2&&answer[answer.length-1]!=")")
+                    if (tempDigit.indexOf("-") == 0&&tempDigit.length>2&&answer.value[answer.value.length-1]!=")")
                         answer.value += ")";
 					if(tempDigit.length>0&&tempDigit[tempDigit.length-1]!="-"&&answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0){
 						math = "+";
@@ -125,7 +125,7 @@ function addDigit(x) {
                 } else
                 if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
                     if ((digit1.length == 0 || digit2.length == 0) && tempDigit != "-") {
-                        if (tempDigit.indexOf("-") == 0&&answer[answer.length-1]!=")")
+                        if (tempDigit.indexOf("-") == 0&&answer.value[answer.value.length-1]!=")")
                             answer.value += ")";
 						if(tempDigit.length>0&&tempDigit[tempDigit.length-1]!="-"&&answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0){
                         math = "-";
@@ -140,7 +140,7 @@ function addDigit(x) {
         case "*":
             {
                 if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
-                    if (tempDigit.indexOf("-") == 0&&tempDigit.length>2&&answer[answer.length-1]!=")")
+                    if (tempDigit.indexOf("-") == 0&&tempDigit.length>2&&answer.value[answer.value.length-1]!=")")
                         answer.value += ")";
 					if(tempDigit.length>0&&tempDigit[tempDigit.length-1]!="-"&&answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0){
                     math = "*";
@@ -154,7 +154,7 @@ function addDigit(x) {
         case "÷":
             {
                 if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
-                    if (tempDigit.indexOf("-") == 0&&tempDigit.length>2&&answer[answer.length-1]!=")")
+                    if (tempDigit.indexOf("-") == 0&&tempDigit.length>2&&answer.value[answer.value.length-1]!=")")
                         answer.value += ")";
 					if(tempDigit.length>0&&tempDigit[tempDigit.length-1]!="-"&&answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0){
                     math = "/";
