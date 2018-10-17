@@ -1,4 +1,17 @@
 header {
     background: radial-gradient(circle, rgba(0, 0, 255, 0.88) 10%, rgba(0, 0, 255, 0.1) 100%), url("img/header.webp");
     background-position: center;
+	background-size: auto 100%;
+}
+.photo{
+	width:100%;
+	height:auto;
+}
+div{
+	font-size:x-large;
+	text-align:justify;
+}
+#footer-logo{
+	height:100px;
+	width:auto;
 }
