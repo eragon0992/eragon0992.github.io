@@ -106,12 +106,14 @@ function addDigit(x) {
         case "+":
             {
                 if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
-                    if (tempDigit.indexOf("-") == 0)
+                    if (tempDigit.indexOf("-") == 0&&tempDigit.length>2&&answer[answer.length-1]!=")")
                         answer.value += ")";
-                    math = "+";
-                    answer.value += "+";
-                    digit1 = tempDigit;
-                    tempDigit = "";
+					if(tempDigit.length>0&&tempDigit[tempDigit.length-1]!="-"&&answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0){
+						math = "+";
+						answer.value += "+";
+						digit1 = tempDigit;
+						tempDigit = "";
+					}
                 }
                 break;
             }
@@ -125,6 +127,7 @@ function addDigit(x) {
                     if ((digit1.length == 0 || digit2.length == 0) && tempDigit != "-") {
                         if (tempDigit.indexOf("-") == 0)
                             answer.value += ")";
+						
                         math = "-";
                         answer.value += "-";
                         digit1 = tempDigit;
@@ -136,24 +139,28 @@ function addDigit(x) {
         case "*":
             {
                 if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
-                    if (tempDigit.indexOf("-") == 0)
+                    if (tempDigit.indexOf("-") == 0&&tempDigit.length>2&&answer[answer.length-1]!=")")
                         answer.value += ")";
+					if(tempDigit.length>0&&tempDigit[tempDigit.length-1]!="-"&&answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0){
                     math = "*";
                     answer.value += "*";
                     digit1 = tempDigit;
                     tempDigit = "";
+					}
                 }
                 break;
             }
         case "÷":
             {
                 if ((answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0) || tempDigit.indexOf("-") == 0) {
-                    if (tempDigit.indexOf("-") == 0)
+                    if (tempDigit.indexOf("-") == 0&&tempDigit.length>2&&answer[answer.length-1]!=")")
                         answer.value += ")";
+					if(tempDigit.length>0&&tempDigit[tempDigit.length-1]!="-"&&answer.value.indexOf('+') < 0 && answer.value.indexOf('-') < 0 && answer.value.indexOf('*') < 0 && answer.value.indexOf('÷') < 0){
                     math = "/";
                     answer.value += "÷";
                     digit1 = tempDigit;
                     tempDigit = "";
+					}
                 }
                 break;
             }
