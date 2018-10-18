@@ -6,6 +6,7 @@ div {
 
 #row1 {
     animation-duration: 2s;
+    visibility: hidden;
 }
 
 header {
