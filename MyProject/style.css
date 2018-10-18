@@ -1,11 +1,15 @@
 div {
     font-size: x-large;
     text-align: justify;
-    animation-duration: 3s;
+
+}
+
+#row1 {
+    animation-duration: 2s;
 }
 
 header {
-    background: radial-gradient(circle, rgba(0, 0, 255, 0.88) 10%, rgba(0, 0, 255, 0.1) 100%), url("img/header.webp");
+    background: radial-gradient(circle, rgba(0, 0, 255, 0.88) 10%, rgba(0, 0, 255, 0.1) 100%), url("img/header.jpg");
     background-position: center;
     background-size: 100% auto;
     background-repeat: no-repeat;
