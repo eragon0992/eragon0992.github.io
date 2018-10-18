@@ -1,6 +1,7 @@
 div {
     font-size: x-large;
     text-align: justify;
+    animation-duration: 3s;
 }
 
 header {
