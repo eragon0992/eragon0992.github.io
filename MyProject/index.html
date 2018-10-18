@@ -8,119 +8,107 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="animate.css">
     <title>Hello, world!</title>
 </head>
 
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row">
-                <div class="col-12 mt-5"></div>
-            </div>
-            <div class="row">
-                <div class="col-12 mt-5"></div>
-            </div>
             <div class="container text-center">
                 <img src="img/logo.png" class="rounded mx-auto d-block img-fluid w-25 h-25 pt-5" alt="Логотип">
-                <h1 class="display-1 font-weight-bold text-white mb-5">МГ41</h1>
+                <h1 class="display-1 font-weight-bold text-white pb-5" id="title">МГ41</h1>
             </div>
-            
-			
-			<nav class="navbar navbar-expand-lg navbar-light">
-			    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-			    </button>
-
-			    <div class="navbar-collapse collapse justify-content-center" id="navbarSupportedContent" style="">
-					<ul class="navbar-nav">
-					  <li class="nav-item active bg-light">
-						<a class="nav-link" href="#">Головна</a>
-					  </li>
-					  <li class="nav-item bg-light">
-						<a class="nav-link" href="#">Учням</a>
-					  </li>
-					  <li class="nav-item dropdown bg-light">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <nav class="navbar navbar-expand-lg navbar-light pb-0">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse justify-content-center" id="navbarSupportedContent" style="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active bg-light pl-3 pr-3">
+                            <a class="nav-link" href="index.html">Головна</a>
+                        </li>
+                        <li class="nav-item bg-light pr-3 pl-3">
+                            <a class="nav-link" href="#">Учням</a>
+                        </li>
+                        <li class="nav-item dropdown bg-light  pr-3 pl-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						  Вчителям
 						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <a class="dropdown-item" href="#">Action</a>
-						  <a class="dropdown-item" href="#">Another action</a>
-						  <div class="dropdown-divider"></div>
-						  <a class="dropdown-item" href="#">Навчальні програми</a>
-						</div>
-					  </li>
-					  <li class="nav-item bg-light">
-						<a class="nav-link" href="#">Батькам</a>
-					  </li>
-					</ul>
-				  </div>
-			</nav>
-			
-			
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">Action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Навчальні програми</a>
+                            </div>
+                        </li>
+                        <li class="nav-item bg-light  pr-3 pl-3">
+                            <a class="nav-link" href="#">Батькам</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
     </header>
-	<div class="container pl-5 pr-5">
-		<div class="row mt-3">
-			<div class="col-md-6">
-				<img src="img/foto1.jpg" class="rounded photo" alt="картинка 1">
+    <div class="container pl-5 pr-5">
+        <div class="row mt-3" id="row1">
+            <div class="col-md-6">
+                <img src="img/foto1.jpg" class="rounded photo" alt="картинка 1">
 			</div>
-			<div class="col-md-6">
-				<h1 class="text-center font-weight-light">Миколаївська гімназія №41</h1>
-				<span class="text-primary font-weight-bold">Найкраща гімназія, найкращі учні, чуйні батьки, досвідчені вчителі»</span><span class="font-italic"> – такий девіз обрали учні й вчителі Миколаївської гімназії №41. Наче мрія, шлях до якої тривалий і нелегкий. Але водночас, це чітка і конкретна мета.</span>
+                <div class="col-md-6">
+                    <h1 class="text-center font-weight-light">Миколаївська гімназія №41</h1>
+                    <span class="text-primary font-weight-bold">Найкраща гімназія, найкращі учні, чуйні батьки, досвідчені вчителі»</span><span class="font-italic"> – такий девіз обрали учні й вчителі Миколаївської гімназії №41. Наче мрія, шлях до якої тривалий і нелегкий. Але водночас, це чітка і конкретна мета.</span>
+                </div>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col">
+                    <p class="font-weight-normal">Сьогодні Миколаївська гімназія №41 – справжня лабораторія розвитку обдарованості учнів, профільної освіти, організації науково-дослідницької діяльності учнів та педагогів. Миколаївська гімназія №41 – сучасний інноваційний заклад освіти, діяльність якого спрямована на формування ключових компетентностей особистості, розвиток інтелектуальних та творчих здібностей учнів та педагогів, виховання свідомого, соціально-активного громадянина, здатного здійснити життєвий вибір, зацікавленого в постійному саморозвитку й самореалізації.</p>
+                </div>
+            </div>
+            <div class="row mt-3 mb-3">
+                <div class="col-md-9">
+                    <ul>
+                        <p class="font-weight-bold">Освітній простір гімназії:
+                            <li>українська мова навчання;</li>
+                            <li>профілізація старшої школи:</li>
+                            <ul>
+                                <li>класи філологічного напрямку (іноземна і українська філологія)
+                                <li>природничого напрямку (біотехнологічного профілю);</li>
+                            </ul>
+                            <li>2 іноземні мови (англійська й німецька);</li>
+                            <li>факультативний курс російської мови;</li>
+                            <li>курси за вибором й факультативи (5, 6, 8-11 класи);</li>
+                            <li>широке впровадження інформаційних та нових педагогічних технологій;</li>
+                            <li>інтегрованість урочної та позаурочної системи;</li>
+                            <li>педагогічні дослідження</li>
+                            <li>діяльність шести кафедр</li>
+                            <li>робота психологічної служби</li>
+                            <li>навчально-вихована робота</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <img src="img/foto2.jpg" class="rounded mx-auto d-block photo mt-2 mb-3" alt="картинка 2">
+                    <img src="img/diplom.jpg" class="rounded mx-auto d-block photo" alt="картинка 2">
 			</div>
-		</div>
-		<div class="row mt-3 mb-3">
-			<div class="col">
-				<p class="font-weight-normal">Сьогодні  Миколаївська гімназія №41 – справжня лабораторія розвитку обдарованості учнів, профільної освіти, організації науково-дослідницької діяльності учнів та педагогів. Миколаївська гімназія №41 – сучасний інноваційний заклад освіти, діяльність якого спрямована на формування ключових компетентностей особистості, розвиток інтелектуальних та творчих здібностей учнів та педагогів, виховання свідомого, соціально-активного громадянина, здатного здійснити життєвий вибір, зацікавленого в постійному саморозвитку й самореалізації.</p>
+                </div>
+            </div>
+            <footer class="bg-primary">
+                <div class="row pt-5">
+                    <div class="col-md">
+                        <img src="img/logo.png" class="rounded mx-auto d-block img-fluid" id="footer-logo" alt="Логотип">
 			</div>
-		</div>
-		
-		<div class="row mt-3 mb-3">
-			<div class="col-md-9">
-				<ul>
-					<p class="font-weight-bold">Освітній простір гімназії:
-					<li>українська мова навчання;</li>
-					<li>профілізація старшої школи:</li>
-					<ul>
-						<li>класи філологічного напрямку (іноземна і українська філологія)
-						<li>природничого напрямку (біотехнологічного профілю);</li>
-					</ul>
-					<li>2 іноземні мови (англійська й німецька);</li>
-					<li>факультативний курс російської мови;</li>
-					<li>курси за вибором й факультативи (5, 6, 8-11 класи);</li>
-					<li>широке впровадження інформаційних та нових педагогічних технологій;</li>
-					<li>інтегрованість урочної та позаурочної системи;</li>
-					<li>педагогічні дослідження</li>
-					<li>діяльність шести кафедр</li>
-					<li>робота психологічної служби</li>
-					<li>навчально-вихована робота</li>
-				</ul>
-			</div>
-			<div class="col-md-3">
-				<img src="img/foto2.jpg" class="rounded mx-auto d-block photo mt-2 mb-3" alt="картинка 2">
-				<img src="img/diplom.jpg" class="rounded mx-auto d-block photo" alt="картинка 2">
-			</div>
-		</div>
-	</div>
-	
-	<footer class="bg-primary">
-		<div class="row pt-5">
-			<div class="col-md">
-				<img src="img/logo.png" class="rounded mx-auto d-block img-fluid" id="footer-logo" alt="Логотип">
-			</div>
-			<div class="col-md">
-				<h1 class="display-3 font-weight-bold text-white mb-5">МГ41</h1>
-			</div>
-		</div>
-	</footer>
-	
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	</div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+                        <div class="col-md">
+                            <h1 class="display-3 font-weight-bold text-white mb-5" id="title">МГ41</h1>
+                        </div>
+                    </div>
+            </footer>
+            <!-- Optional JavaScript -->
+            <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        </div>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="scripts.js"></script>
 </body>
 
 </html>

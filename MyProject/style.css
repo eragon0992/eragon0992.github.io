@@ -1,17 +1,48 @@
+div {
+    font-size: x-large;
+    text-align: justify;
+}
+
 header {
     background: radial-gradient(circle, rgba(0, 0, 255, 0.88) 10%, rgba(0, 0, 255, 0.1) 100%), url("img/header.webp");
     background-position: center;
-	background-size: auto 100%;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
 }
-.photo{
-	width:100%;
-	height:auto;
+
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.5);
 }
-div{
-	font-size:x-large;
-	text-align:justify;
+
+@media only screen and (max-width: 600px) {
+    header {
+        background-image: radial-gradient(circle, rgba(0, 0, 255, 0.88) 10%, rgba(0, 0, 255, 0.1) 100%), url("img/header.webp");
+        background-size: cover;
+    }
+
+    #title {
+        font-size: 150%;
+        padding-bottom: 20px !important;
+    }
+
+    div {
+        font-size: 100%;
+    }
+
+    .container {
+        padding: 0 10px 0 10px !important;
+    }
 }
-#footer-logo{
-	height:100px;
-	width:auto;
+
+
+.photo {
+    width: 100%;
+    height: auto;
+}
+
+
+
+#footer-logo {
+    height: 100px;
+    width: auto;
 }
