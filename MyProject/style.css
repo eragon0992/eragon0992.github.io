@@ -11,26 +11,52 @@ header {
     background-repeat: no-repeat;
 }
 
+.navbar {
+    background: #fff;
+    height: 60px;
+    z-index: 170;
+    margin: 0auto;
+    border-bottom: 1pxsolid#dadada;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
 .navbar-toggler {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.carousel-inner{
-	overflow:hiden;
-	height:300px;
+.carousel-inner {
+    overflow: hiden;
+    height: 350px;
 }
 
-.slide-item{
-	width:100%;
-	height:300px;
-	background-size:cover;
-	background-position:center;
+.slide-item {
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    background-position: center;
 }
 
 @media only screen and (max-width: 600px) {
+    div {
+        animation: none;
+    }
+
     header {
         background-image: radial-gradient(circle, rgba(0, 0, 255, 0.88) 10%, rgba(0, 0, 255, 0.1) 100%), url("img/header.jpg");
         background-size: cover;
+    }
+
+    .carousel-inner {
+        height: 220px;
+    }
+
+    .slide-item {
+        height: 220px;
     }
 
     #title {
@@ -58,4 +84,35 @@ header {
 #footer-logo {
     height: 100px;
     width: auto;
+}
+
+footer .row {
+    margin: 0;
+}
+
+div.scrollup {
+    position: fixed;
+    /* фиксированная позиция */
+    color: #fff;
+    /* цвет текста */
+    background-color: #286090;
+    /* цвет заднего фона */
+    right: 20px;
+    /* расстояние от правого края */
+    bottom: 0px;
+    /* расстояние от нижнего края */
+    padding: 4px 10px;
+    /* отступы до содержимого блока */
+    font-size: 20px;
+    /* размер шрифта (иконки) */
+    border-top-left-radius: 4px;
+    /* скругление верхнего левого угла */
+    border-top-right-radius: 4px;
+    /* скругление верхнего правого угла */
+    cursor: pointer;
+    /* форма курсора */
+    display: none;
+    /* не отображать элемент */
+    text-align: center;
+    /*выравнивание содержимого элемента по центру */
 }
