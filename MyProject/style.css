@@ -86,12 +86,37 @@ header {
     .container {
         padding: 0 10px 0 10px !important;
     }
+
+    #students-logo {
+        display: none;
+    }
+
+    #id-create {
+        display: none;
+    }
 }
 
 
 .photo {
     width: 100%;
     height: auto;
+}
+
+#scroll-data {
+    padding: 5px 10px 5px 10px;
+    max-height: 20em;
+    overflow-y: scroll;
+}
+
+.form-check-input {
+    height: 20px;
+    width: 20px;
+}
+
+#students-logo {
+    background-image: url('img/children.png');
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
 
