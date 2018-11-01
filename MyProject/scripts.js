@@ -45,18 +45,16 @@ $("#button-create").click(function() {
     $("#student-photo-row").addClass("d-none");
 });
 
-
+var img_photo;
+var img_path;
 $("input:file").change(function() {
     var photo = $(this).val();
     var ctx = document.getElementById('canvas-id').getContext('2d');
-    var img_photo = new Image();
+    img_photo = new Image();
     photo = photo.replace("C:\\fakepath\\", "");
-    img_photo.src = "id/" + photo;
+    img_path = "id/" + photo;
     $(".custom-file-label").html(photo);
-    img_photo.onload = function() {
-        ctx.drawImage(img_photo, 0, 0, 300, 400);
-    };
-    $('#student-photo-row').removeClass("d-none");
+
 
 });
 
@@ -81,6 +79,11 @@ $("#btn-save").click(function() {
     img_logo.onload = function() {
         ctx.drawImage(img_logo, 0, 250, 150, 150);
     }
+
+    img_photo.src = img_path;
+    img_photo.onload = function() {
+        ctx.drawImage(img_photo, 0, 0, 300, 400);
+    };
 
     var options = {
         render: "image",
@@ -109,7 +112,7 @@ $("#btn-save").click(function() {
     //ctx.drowImage(qrcode(options), 200, 200);
 
     $('#canvas-id').empty().qrcode(options);
-
+    $('#student-photo-row').removeClass("d-none");
 });
 
 
